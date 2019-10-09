@@ -17,14 +17,13 @@ char *search_full_word(int index, char *str, char const *to_find)
 
     while (str[index] == to_find[holder_index] && str[index] != '\0') {
         index++;
-        holder_index ++;
+        holder_index++;
     }
 
-    if (holder_index == my_strlen(to_find)) {
+    if (holder_index == my_strlen(to_find))
         return (&str[original_index]);
-    } else {
+    else
         return (search_first_letter(original_index + 1, str, to_find));
-    }
 }
 
 char *search_first_letter(int index, char *str, char const *to_find)
@@ -43,8 +42,7 @@ char *my_strstr(char *str, char const *to_find)
 {
     int index = 0;
 
-    if (to_find[0] == '\0') {
+    if (to_find[0] == '\0')
         return str;
-    }
     return (search_first_letter(index, str, to_find));
 }

@@ -5,14 +5,15 @@
 ** Task 02
 */
 
+int my_strlen(char const *str);
+
 char *my_strcat(char *dest, char const *src)
 {
     int i = 0;
     int j = 0;
 
-    if (my_strlen(src) == 0) {
+    if (my_strlen(src) == 0)
         return (dest);
-    }
     while (dest[i] != '\0') {
         i++;
     }

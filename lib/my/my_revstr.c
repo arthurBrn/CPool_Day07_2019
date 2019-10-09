@@ -17,5 +17,5 @@ char *my_revstr(char *str)
         str[i] = str[length - 1 - i];
         str[length - 1 - i] = swap;
     }
-    return str;
+    return (str);
 }

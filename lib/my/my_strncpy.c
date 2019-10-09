@@ -7,21 +7,15 @@
 
 int my_strlen(char const *src);
 
-// got helloA
-// expected hello
-
 char *my_strncpy(char *dest, char const *src, int n)
 {
     int i = 0;
-    int length = my_strlen(src);
 
     while (i < n) {
         dest[i] = src[i];
         i++;
     }
-    if (n > length) {
+    if (n > my_strlen(src))
         dest[i] = '\0';
-    }
-
     return (dest);
 }

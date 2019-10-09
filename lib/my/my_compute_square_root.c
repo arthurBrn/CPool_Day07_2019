@@ -11,12 +11,11 @@ int my_compute_square_root(int nb)
 {
     int b = 0;
 
-    for (int a=0; a <= nb; a++) {
-        if (b*b == nb) {
+    for (int a = 0; a <= nb; a++) {
+        if (b * b == nb)
             return b;
-        } else {
+        else
             b++;
-        }
     }
     return (0);
 }
