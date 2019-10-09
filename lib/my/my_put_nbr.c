@@ -27,7 +27,7 @@ int my_put_nbr(int nb)
     int reste = 0;
 
     if (nb == -2147483648) {
-        resexception();
+        resexception(void);
         return (0);
     }
     if (nb < 0 && nb != -2147483648) {
