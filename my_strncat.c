@@ -1,11 +1,13 @@
 /*
 ** EPITECH PROJECT, 2019
-** my_strcat
+** my_strncat
 ** File description:
-** Task 02
+** Task 03
 */
 
-char *my_strcat(char *dest, char const *src)
+int my_strlen(char const *str);
+
+char *my_strncat(char *dest, char const *src, int nb)
 {
     int i = 0;
     int j = 0;
@@ -16,10 +18,11 @@ char *my_strcat(char *dest, char const *src)
     while (dest[i] != '\0') {
         i++;
     }
-    while (src[j] != '\0') {
+    while (nb > 0) {
         dest[i] = src[j];
         i++;
         j++;
+        nb--;
     }
     return (dest);
 }
