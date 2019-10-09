@@ -5,7 +5,7 @@
 ** Task 0X
 */
 
-int my_get_nbr(char const *str)
+int my_getnbr(char const *str)
 {
     return (0);
 }
