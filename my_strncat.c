@@ -12,9 +12,8 @@ char *my_strncat(char *dest, char const *src, int nb)
     int i = 0;
     int j = 0;
 
-    if (my_strlen(src) == 0) {
+    if (my_strlen(src) == 0)
         return (dest);
-    }
     while (dest[i] != '\0') {
         i++;
     }
