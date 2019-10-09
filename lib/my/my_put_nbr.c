@@ -7,7 +7,7 @@
 
 void my_putchar(char c);
 
-void resexception()
+void resexception(void)
 {
     my_putchar('-');
     my_putchar(2 + '0');
@@ -27,7 +27,7 @@ int my_put_nbr(int nb)
     int reste = 0;
 
     if (nb == -2147483648) {
-        resexception(void);
+        resexception();
         return (0);
     }
     if (nb < 0 && nb != -2147483648) {
