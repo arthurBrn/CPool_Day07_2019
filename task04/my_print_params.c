@@ -5,7 +5,7 @@
 ** Task 04
 */
 
-void my_putstr(char const *c);
+int my_putstr(char const *c);
 void my_putchar(char c);
 
 void *my_print_params(int argc, char **argv)
