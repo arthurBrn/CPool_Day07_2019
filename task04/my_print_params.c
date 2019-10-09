@@ -12,10 +12,9 @@ void *my_print_params(int argc, char **argv)
 {
     int i = 0;
 
-    while (i <= argc + 1) {
+    while (i != argc) {
         my_putstr(argv[i]);
         my_putchar('\n');
-        argc--;
         i++;
     }
 }
